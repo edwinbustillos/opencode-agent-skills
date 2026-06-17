@@ -2,9 +2,10 @@
 :: ============================================================================
 :: OpenCode Agent Team - Wrapper Windows
 :: ============================================================================
-:: Uso: duplo clique = desinstalar (config/skills/agentes)
-::      uninstall --hard = remover TUDO
+:: Uso: setup install
+::      setup uninstall
+::      setup uninstall --hard
 :: ============================================================================
 cd /d "%~dp0"
-powershell -ExecutionPolicy Bypass -File "%~dp0setup.ps1" uninstall %*
+powershell -ExecutionPolicy Bypass -File "%~dp0setup.ps1" %*
 pause
