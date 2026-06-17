@@ -1,0 +1,22 @@
+# opencode-agent
+node_modules/
+.cache/
+*.log
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Build
+dist/
+build/
+*.o
+*.a
+*.so
