@@ -9,10 +9,17 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # IDE
 .vscode/settings.json
+.vscode/launch.json
 .idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
 
 # Build
 dist/
@@ -20,3 +27,41 @@ build/
 *.o
 *.a
 *.so
+*.dll
+*.exe
+
+# Package managers
+package-lock.json
+bun.lock
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Go
+vendor/
+
+# Rust
+target/
+
+# Java
+*.class
+*.jar
+.gradle/
+build/
+
+# Dart/Flutter
+.dart_tool/
+.packages
+pubspec.lock
+
+# Misc
+*.bak
+*.tmp
+*.temp
