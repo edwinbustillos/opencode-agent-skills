@@ -74,6 +74,7 @@ Carregue a skill correspondente à stack do projeto:
 - Performance: `performance-optimization` — inclui Animation & Rendering Performance (GPU acceleration, will-change, RAF, IntersectionObserver)
 - Setup: `project-setup`
 - Arduino/Embarcados: `arduino-embedded`
+- 3D/Immersive Web: `frontend-3d` — React Three Fiber, Three.js, GLSL shaders, GSAP, Post-Processing, sites Awwwards
 
 ## Agentes Disponíveis
 - `tech-lead` — Coordenação e arquitetura
@@ -86,3 +87,4 @@ Carregue a skill correspondente à stack do projeto:
 - `devops-engineer` — CI/CD, Docker, Kubernetes, infraestrutura
 - `security-specialist` — Auditoria de segurança, OWASP, hardening
 - `arduino-engineer` — Arduino, ESP, embarcados
+- `frontend-3d` — Sites 3D imersivos, React Three Fiber, Three.js, GLSL shaders, GSAP, Post-Processing, efeitos visuais Awwwards
