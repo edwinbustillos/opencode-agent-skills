@@ -254,6 +254,22 @@
         "todowrite": true,
         "webfetch": true
       }
+    },
+    "frontend-3d": {
+      "mode": "subagent",
+      "description": "Especialista em sites 3D imersivos com React Three Fiber, Three.js, GLSL shaders, GSAP e efeitos visuais modernos estilo Awwwards",
+      "color": "#FF6B35",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "read": true,
+        "grep": true,
+        "glob": true,
+        "skill": true,
+        "todowrite": true,
+        "webfetch": true
+      }
     }
   },
   "skills": {
