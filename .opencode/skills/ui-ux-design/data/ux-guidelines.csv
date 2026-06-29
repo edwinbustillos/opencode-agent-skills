@@ -1,0 +1,100 @@
+No,Priority,Category,Rule,Description,Standard,Anti-Pattern,Impact
+1,CRITICAL,Accessibility,color-contrast,Minimum 4.5:1 ratio for normal text (large text 3:1),WCAG 2.1 AA,Gray-on-gray text below 4.5:1,Users cannot read content
+2,CRITICAL,Accessibility,focus-states,Visible focus rings on interactive elements 2-4px,Apple HIG Material Design,Removing outline:none without replacement,Keyboard users cannot navigate
+3,CRITICAL,Accessibility,alt-text,Descriptive alt text for meaningful images,WCAG 2.1,Missing alt on informative images,Screen reader users miss content
+4,CRITICAL,Accessibility,aria-labels,aria-label for icon-only buttons,Apple HIG,Icon buttons without labels,Assistive tech cannot identify buttons
+5,CRITICAL,Accessibility,keyboard-nav,Tab order matches visual order full keyboard support,Apple HIG,Non-focusable interactive elements,Keyboard users blocked
+6,CRITICAL,Accessibility,form-labels,Use label with for attribute,WCAG 2.1,Placeholder-only labels,Labels disappear on focus
+7,CRITICAL,Accessibility,skip-links,Skip to main content for keyboard users,WCAG 2.1,No skip navigation,Tab through entire nav every page
+8,CRITICAL,Accessibility,heading-hierarchy,Sequential h1-h6 no level skip,WCAG 2.1,Skipping heading levels,Screen reader navigation broken
+9,CRITICAL,Accessibility,color-not-only,Don't convey info by color alone,WCAG 2.1,Red/green only for error/success,Colorblind users miss meaning
+10,CRITICAL,Accessibility,reduced-motion,Respect prefers-reduced-motion media query,Apple Reduced Motion API,Animations ignoring reduced motion,Vestibular disorders triggered
+11,CRITICAL,Accessibility,voiceover-sr,Meaningful accessibilityLabel and logical reading order,Apple HIG,Unlabeled controls confusing traversal,Screen reader experience broken
+12,CRITICAL,Accessibility,dynamic-type,Support system text scaling without truncation,Apple Dynamic Type,Fixed height containers clipping text,Users with large text cannot read
+13,CRITICAL,Touch,touch-target-size,Min 44x44pt (Apple) / 48x48dp (Material),Apple HIG Material Design,Small icons without expanded tap area,Users cannot tap accurately
+14,CRITICAL,Touch,touch-spacing,Minimum 8px gap between touch targets,Apple HIG Material Design,Buttons touching each other,Accidental taps on wrong element
+15,CRITICAL,Touch,hover-vs-tap,Use click/tap for primary interactions not hover alone,Material Design,Relying on hover for essential features,Mobile users cannot access feature
+16,CRITICAL,Touch,loading-buttons,Disable button during async operations show spinner,Material Design,Clickable button during submission,Double submissions confusion
+17,CRITICAL,Touch,error-feedback,Clear error messages near problem,Material Design,Generic error at page top,Users don't know what's wrong
+18,CRITICAL,Touch,cursor-pointer,Add cursor-pointer to clickable elements,Web convention,Clickable elements with default cursor,No visual affordance for click
+19,HIGH,Performance,image-optimization,Use WebP/AVIF responsive images lazy load,Core Web Vitals,Unoptimized PNG/JPEG hero images,Slow LCP poor mobile experience
+20,HIGH,Performance,image-dimension,Declare width/height or aspect-ratio to prevent CLS,Core Web Vitals,Images without dimensions,Layout shift during load
+21,HIGH,Performance,font-loading,Use font-display swap to avoid FOIT,Material Design,font-display:block causing invisible text,Flash of invisible text
+22,HIGH,Performance,critical-css,Prioritize above-the-fold CSS,Web performance,Render-blocking full stylesheet,Slow first paint
+23,HIGH,Performance,lazy-loading,Lazy load non-hero components via dynamic import,Web performance,Loading all components eagerly,Slow initial page load
+24,HIGH,Performance,virtualize-lists,Virtualize lists with 50+ items,Web performance,Rendering 1000 DOM nodes in list,Memory issues janky scroll
+25,HIGH,Performance,main-thread-budget,Keep per-frame work under 16ms for 60fps,Apple HIG,Long JS blocking main thread,Janky animations delayed input
+26,HIGH,Performance,progressive-loading,Use skeleton screens for >1s operations,Apple HIG,Blocking spinners for long loads,Poor perceived performance
+27,HIGH,Performance,input-latency,Keep input latency under 100ms,Material Design,Delayed response to taps,App feels sluggish
+28,HIGH,Performance,debounce-throttle,Debounce/throttle scroll resize input events,Web performance,Unthrottled scroll handlers,Janky scroll performance
+29,HIGH,Style,style-match,Match style to product type,Design principles,Mixing flat and skeuomorphic randomly,Visual inconsistency
+30,HIGH,Style,consistency,Use same style across all pages,Design principles,Different styles per page,Unprofessional fragmented feel
+31,HIGH,Style,no-emoji-icons,Use SVG icons not emojis,Design principles,Emojis as navigation icons,Inconsistent cross-platform rendering
+32,HIGH,Style,color-palette-from-product,Choose palette from product/industry,Design principles,Random color selection,Colors don't match brand/industry
+33,HIGH,Style,effects-match-style,Shadows blur radius aligned with chosen style,Glassmorphism Neumorphism,Hard shadows on soft UI,Style inconsistency
+34,HIGH,Style,platform-adaptive,Respect platform idioms iOS HIG vs Material,Apple HIG Material Design,iOS app using Material patterns,Users confused by foreign patterns
+35,HIGH,Style,state-clarity,Make hover/pressed/disabled visually distinct,Material Design,States that look identical,Users don't know what's interactive
+36,HIGH,Style,elevation-consistent,Consistent elevation/shadow scale,Material Design,Random shadow values,Inconsistent depth hierarchy
+37,HIGH,Style,dark-mode-pairing,Design light/dark variants together,Design principles,Only designing light mode,Dark mode as afterthought
+38,HIGH,Style,icon-style-consistent,One icon set/visual language,Design principles,Mixing icon styles,Visual inconsistency
+39,HIGH,Layout,viewport-meta,width=device-width initial-scale=1,Web basics,Disabling zoom or wrong viewport,Mobile rendering broken
+40,HIGH,Layout,mobile-first,Design mobile-first then scale up,Responsive design,Desktop-first with mobile patches,Poor mobile experience
+41,HIGH,Layout,breakpoint-consistency,Systematic breakpoints 375/768/1024/1440,Responsive design,Random breakpoint values,Inconsistent responsive behavior
+42,HIGH,Layout,readable-font-size,Minimum 16px body text on mobile,Web basics,12px body text on mobile,iOS auto-zoom unreadable text
+43,HIGH,Layout,line-length-control,Mobile 35-60 chars desktop 60-75 chars,Typography,Full-width paragraphs on desktop,Poor readability eye fatigue
+44,HIGH,Layout,horizontal-scroll,No horizontal scroll on mobile,Responsive design,Content wider than viewport,Broken mobile layout
+45,HIGH,Layout,spacing-scale,4pt/8dp incremental spacing system,Material Design,Random spacing values,Inconsistent visual rhythm
+46,HIGH,Layout,container-width,Consistent max-width on desktop,Responsive design,Different max-widths per section,Inconsistent content alignment
+47,HIGH,Layout,z-index-management,Define layered z-index scale,Web development,Arbitrary z-index values,Elements overlapping unexpectedly
+48,HIGH,Navigation,bottom-nav-limit,Bottom navigation max 5 items with labels,Material Design,More than 5 items in bottom nav,Overcrowded navigation
+49,HIGH,Navigation,back-behavior,Back navigation predictable and consistent,Apple HIG Material Design,Broken or unexpected back behavior,Users lost in app
+50,HIGH,Navigation,deep-linking,All key screens reachable via URL,Apple HIG Material Design,No deep links for key content,Cannot share or bookmark content
+51,HIGH,Navigation,nav-label-icon,Both icon and text label in navigation,Material Design,Icon-only navigation items,Poor discoverability
+52,HIGH,Navigation,nav-state-active,Current location visually highlighted,Apple HIG Material Design,No active state in navigation,Users don't know where they are
+53,HIGH,Navigation,nav-hierarchy,Primary vs secondary nav clearly separated,Material Design,Mixing primary and secondary nav,Confusing navigation structure
+54,HIGH,Navigation,adaptive-navigation,Large screens sidebar small screens bottom/top nav,Material Design,Same navigation for all sizes,Poor desktop or mobile nav
+55,MEDIUM,Typography,line-height,Use 1.5-1.75 for body text,Typography,Line-height 1.0 or 1.2 for body,Text lines touching hard to read
+56,MEDIUM,Typography,line-length,Limit to 65-75 characters per line,Typography,Paragraphs spanning full viewport width,Eye fatigue poor readability
+57,MEDIUM,Typography,font-pairing,Match heading/body font personalities,Typography,Random font combinations,Visual discord
+58,MEDIUM,Typography,font-scale,Consistent type scale,Typography,Arbitrary font sizes,Inconsistent hierarchy
+59,MEDIUM,Typography,contrast-readability,Darker text on light backgrounds,Typography,Light gray text on white,Low contrast unreadable
+60,MEDIUM,Typography,color-semantic,Define semantic color tokens not raw hex,Material Design,Hardcoded hex values in components,Maintenance nightmare
+61,MEDIUM,Typography,color-dark-mode,Desaturated lighter variants not inverted,Apple HIG,Inverted colors in dark mode,Eye strain poor contrast
+62,MEDIUM,Typography,number-tabular,Use tabular figures for data columns,Typography,Proportional numbers in tables,Numbers jumping around in columns
+63,MEDIUM,Animation,duration-timing,150-300ms micro-interactions ≤400ms complex,Material Design,Animations over 500ms,Slow feeling UI
+64,MEDIUM,Animation,transform-performance,Use transform/opacity only,Web performance,Animating width/height/top/left,Layout thrashing janky animation
+65,MEDIUM,Animation,loading-states,Show skeleton when loading exceeds 300ms,Material Design,Blank screen during load,Poor perceived performance
+66,MEDIUM,Animation,easing,ease-out entering ease-in exiting,Animation principles,Linear easing for UI transitions,Robotic unnatural feel
+67,MEDIUM,Animation,motion-meaning,Every animation expresses cause-effect,Apple HIG,Decorative-only animation,Animation feels pointless
+68,MEDIUM,Animation,state-transition,State changes animate smoothly not snap,Material Design,Instant state transitions,Jarring experience
+69,MEDIUM,Animation,continuity,Page transitions maintain spatial continuity,Apple HIG,Hard cuts between screens,Users lose context
+70,MEDIUM,Animation,exit-faster-than-enter,Exit ~60-70% of enter duration,Material Design,Same duration for enter and exit,Exit feels sluggish
+71,MEDIUM,Animation,stagger-sequence,30-50ms per item for lists/grids,Material Design,All items appearing at once,No visual rhythm
+72,MEDIUM,Animation,spring-physics,Prefer spring curves for natural feel,Apple HIG,Linear or unnatural easing,Mechanical feel
+73,MEDIUM,Animation,interruptible,Animations cancelable by user gesture,Apple HIG,Blocking animations,Users stuck waiting
+74,MEDIUM,Animation,scale-feedback,Subtle scale 0.95-1.05 on press,Apple HIG Material Design,No press feedback on tappable cards,No confirmation of interaction
+75,MEDIUM,Forms,input-labels,Visible label per input not placeholder-only,Material Design,Placeholder as label,Label disappears on focus
+76,MEDIUM,Forms,error-placement,Show error below the related field,Material Design,Error summary at page top,Users can't find which field has error
+77,MEDIUM,Forms,submit-feedback,Loading then success/error on submit,Material Design,No feedback after submit,Users don't know if form submitted
+78,MEDIUM,Forms,required-indicators,Mark required fields,Material Design,No indication of required fields,Users submit incomplete forms
+79,MEDIUM,Forms,empty-states,Helpful message and action when no content,Material Design,Blank screen with no guidance,Users don't know what to do
+80,MEDIUM,Forms,toast-dismiss,Auto-dismiss toasts in 3-5s,Material Design,Toasts that never dismiss,Screen cluttered with notifications
+81,MEDIUM,Forms,confirmation-dialogs,Confirm before destructive actions,Material Design,No confirmation for delete,Accidental data loss
+82,MEDIUM,Forms,input-helper-text,Persistent helper text below complex inputs,Material Design,Only placeholder text no helper,Users don't understand input format
+83,MEDIUM,Forms,disabled-states,Reduced opacity 0.38-0.5 + cursor change,Material Design,Disabled elements look clickable,Users confused why nothing happens
+84,MEDIUM,Forms,progressive-disclosure,Reveal complex options progressively,Apple HIG,Showing all options upfront,Users overwhelmed
+85,MEDIUM,Forms,inline-validation,Validate on blur not keystroke,Material Design,Validating on every keystroke,Annoying premature errors
+86,MEDIUM,Forms,input-type-keyboard,Semantic types email/tel/number,Material Design,type=text for email fields,Wrong mobile keyboard
+87,MEDIUM,Forms,password-toggle,Show/hide toggle for password fields,Material Design,No way to see password,Users can't verify input
+88,MEDIUM,Forms,undo-support,Allow undo for destructive actions,Apple HIG,No undo for delete,Permanent accidental deletions
+89,MEDIUM,Forms,error-recovery,Messages include clear recovery path,Apple HIG,Error without solution,Users stuck
+90,MEDIUM,Forms,multi-step-progress,Step indicator + back navigation,Material Design,No progress indication in multi-step,Users don't know where they are
+91,MEDIUM,Forms,focus-management,Auto-focus first invalid field after submit error,WCAG,No focus on error field,Users have to search for error
+92,MEDIUM,Forms,destructive-emphasis,Destructive actions use danger color visually separated,Apple HIG Material Design,Delete button same style as save,Accidental deletions
+93,LOW,Charts,chart-type,Match chart to data type,Data visualization,Pie chart for time series,Misleading data representation
+94,LOW,Charts,color-guidance,Accessible color palettes,WCAG,Red/green only pairs,Colorblind users cannot distinguish
+95,LOW,Charts,data-table,Provide table alternative for accessibility,WCAG,Charts alone without data table,Screen reader users cannot access data
+96,LOW,Charts,legend-visible,Always show legend near chart,Material Design,Legend hidden or detached,Users don't know what colors mean
+97,LOW,Charts,tooltip-on-interact,Show exact values on hover/tap,Material Design,No tooltips on chart elements,Users can't read exact values
+98,LOW,Charts,axis-labels,Label axes with units and readable scale,Data visualization,Unlabeled or truncated axis labels,Data meaning unclear
+99,LOW,Charts,empty-data-state,Meaningful empty state with guidance,Material Design,Broken empty chart,Users don't know why chart is empty

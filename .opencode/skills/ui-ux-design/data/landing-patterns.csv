@@ -1,0 +1,9 @@
+No,Pattern,Sections,Best For,CTA Strategy,Hero Style,Trust Elements,Conversion Focus
+1,Hero-Centric,"Hero → Features → Testimonials → CTA",Strong visual identity products,Above fold repeated after testimonials,Full-width image/video with overlay,Testimonials with photos,Very High
+2,Conversion-Optimized,"Form → Trust → Urgency → FAQ",Lead generation sales pages,Single primary CTA minimal distractions,Form-focused with clear value prop,Trust badges urgency elements,Very High
+3,Feature-Rich Showcase,"Hero → Feature Grid → Comparison → Pricing → CTA",SaaS complex products,After each feature section,Product screenshot or demo,Feature comparison table,High
+4,Minimal & Direct,"Hero → Brief Description → Single CTA",Simple products apps,One clear CTA above fold,Clean headline with whitespace,None needed,High
+5,Social Proof-Focused,"Hero → Logos → Testimonials → Case Studies → CTA",Services B2C products,After testimonials section,Value prop with logo bar,Client logos testimonials case studies,High
+6,Interactive Product Demo,"Hero → Live Demo → Features → Pricing → CTA",Software tools,Try demo button prominent,Embedded interactive product mockup,Working demo as proof,Very High
+7,Trust & Authority,"Hero → Certifications → Case Studies → Expert Team → CTA",B2B enterprise consulting,After establishing credibility,Professional with credentials,Badges certifications compliance logos,High
+8,Storytelling-Driven,"Chapter 1 → 2 → 3 → Mission → CTA",Brands agencies nonprofits,Mission-aligned CTA at end,Narrative with emotional imagery,Founder story mission impact,Medium

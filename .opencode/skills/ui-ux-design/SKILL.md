@@ -1,45 +1,164 @@
 ---
 name: ui-ux-design
-description: Expert UI/UX design with design systems, CSS frameworks, animation engines, 3D/particle effects, landing pages, accessibility (WCAG), responsive design, typography, color theory, motion design, and modern design tools
+description: "Expert UI/UX design with 67 styles, 161 color palettes, 57 font pairings, 99 UX guidelines, 25 chart types, design systems, CSS frameworks, animation engines, 3D/particle effects, landing pages, accessibility (WCAG), responsive design, typography, color theory, motion design, and reasoning engine for industry-specific design system generation."
 metadata:
-  domains: ui,ux,design-systems,accessibility,animation,3d,landing-pages
-  tools: figma,css,tailwind,bootstrap,bulma,vuetify,gsap,threejs,framer-motion
+  domains: ui,ux,design-systems,accessibility,animation,3d,landing-pages,styles,typography,color-palettes,charts
+  tools: figma,css,tailwind,bootstrap,bulma,vuetify,gsap,threejs,framer-motion,animejs
+  data: 67-styles,161-colors,57-typography,99-ux-guidelines,25-charts,8-landing-patterns
 ---
 
 ## What I do
 
-I create accessible, beautiful, and consistent user interfaces with immersive experiences:
+I create accessible, beautiful, and consistent user interfaces with immersive experiences. I use a **reasoning engine** to generate complete design systems tailored to your product type and industry.
 
-- **Design Systems**: Component libraries, design tokens, documentation
-- **Accessibility**: WCAG 2.1 AA compliance, screen reader support, keyboard navigation
-- **Responsive Design**: Mobile-first, fluid typography, container queries
-- **Typography**: Scale systems, font pairing, line height, readability
-- **Color Theory**: Color systems, contrast ratios, dark mode, colorblind-safe palettes
-- **Motion Design**: Micro-interactions, transitions, animation principles, scroll-triggered effects
-- **CSS Frameworks**: Tailwind CSS, Bootstrap 5, Bulma, Vuetify, Material UI
-- **CSS Architecture**: Custom properties, modern layouts (Grid, Flexbox), animations, styled-components
-- **Design Tokens**: CSS variables, theme switching, multi-platform tokens
-- **Component Design**: Atomic design, compound components, headless patterns
-- **User Research**: Usability heuristics, accessibility audits, user testing
-- **Landing Pages**: High-conversion layouts, hero sections, CTAs, social proof, A/B testing patterns
-- **Animation Engines**: GSAP, Motion (Framer Motion), Anime.js, CSS keyframe animations
-- **3D & Particle Effects**: Three.js, Particles.js, Atropos parallax, WebGL canvas
-- **Interactive Effects**: Kinetic typography, particle reconstruction, scroll storytelling
+### Core Capabilities
+- **Design System Generation**: Complete systems with style, colors, typography, effects
+- **67 UI Styles**: From Minimalism to AI-Native UI, each with implementation checklists
+- **161 Color Palettes**: Industry-specific palettes with WCAG compliance built-in
+- **57 Font Pairings**: Curated Google Fonts combinations with mood matching
+- **99 UX Guidelines**: Prioritized rules from CRITICAL to LOW
+- **25 Chart Types**: Data visualization recommendations by data type
+- **8 Landing Page Patterns**: Conversion-optimized layouts
+- **CSS Frameworks**: Tailwind, Bootstrap, Bulma, Vuetify, Material UI
+- **Animation Engines**: GSAP, Motion (Framer Motion), Anime.js, CSS keyframes
+- **3D & Particles**: Three.js, Particles.js, Atropos, WebGL canvas
+- **Accessibility**: WCAG 2.1 AA/AAA compliance, screen readers, keyboard nav
 
 ## When to use me
 
-- Building design systems from scratch
-- Auditing and fixing accessibility issues
-- Designing responsive layouts with CSS frameworks
-- Creating CSS custom property theming systems
-- Implementing dark mode
-- Designing component APIs
-- Creating animation and motion guidelines
-- Conducting usability evaluations
-- Building high-conversion landing pages
-- Implementing complex scroll-triggered animations
-- Creating immersive 3D or particle-based backgrounds
-- Adding kinetic typography and interactive text effects
+### Must Use
+- Designing new pages (Landing, Dashboard, Admin, SaaS, Mobile App)
+- Creating or refactoring UI components
+- Choosing color schemes, typography, spacing, or layout systems
+- Reviewing UI code for accessibility or visual consistency
+- Implementing animations, transitions, or responsive behavior
+- Building design systems or reusable component libraries
+
+### Recommended
+- UI looks "not professional enough" but reason is unclear
+- Pre-launch UI quality optimization
+- Aligning cross-platform design (Web / iOS / Android)
+- Receiving feedback on usability or experience
+
+## Reasoning Engine Workflow
+
+### Step 1: Analyze Requirements
+Extract from user request:
+- **Product type**: SaaS, e-commerce, healthcare, gaming, etc.
+- **Target audience**: B2B, B2C, developers, consumers
+- **Style keywords**: playful, minimal, dark mode, immersive
+- **Stack**: React, Next.js, Vue, Angular, Flutter, etc.
+
+### Step 2: Generate Design System
+Combine data from `data/` CSVs:
+1. Match product type → `data/colors.csv` row
+2. Select style → `data/styles.csv` matching entry
+3. Choose typography → `data/typography.csv` pairing
+4. Apply UX rules → `data/ux-guidelines.csv` by priority
+5. Select landing pattern → `data/landing-patterns.csv`
+6. Choose chart types → `data/chart-types.csv`
+
+### Step 3: Validate with Pre-Delivery Checklist
+Run through the checklist below before delivering code.
+
+## Rule Categories by Priority
+
+| Priority | Category | Impact | Key Checks | Anti-Patterns |
+|----------|----------|--------|------------|---------------|
+| 1 | Accessibility | CRITICAL | Contrast 4.5:1, Alt text, Keyboard nav, Aria-labels | Removing focus rings, Icon-only buttons without labels |
+| 2 | Touch & Interaction | CRITICAL | Min 44×44px, 8px+ spacing, Loading feedback | Hover-only reliance, Instant state changes |
+| 3 | Performance | HIGH | WebP/AVIF, Lazy loading, CLS < 0.1 | Layout thrashing, unoptimized images |
+| 4 | Style Selection | HIGH | Match product type, Consistency, SVG icons | Mixing flat & skeuomorphic, Emoji as icons |
+| 5 | Layout & Responsive | HIGH | Mobile-first, Viewport meta, No horizontal scroll | Fixed px widths, Disable zoom |
+| 6 | Typography & Color | MEDIUM | Base 16px, Line-height 1.5, Semantic tokens | Text < 12px, Gray-on-gray, Raw hex |
+| 7 | Animation | MEDIUM | 150–300ms, Motion has meaning, Reduced motion | Decorative-only, Animating width/height |
+| 8 | Forms & Feedback | MEDIUM | Visible labels, Error near field, Progressive disclosure | Placeholder-only labels, Errors at top |
+| 9 | Navigation | HIGH | Predictable back, Bottom nav ≤5, Deep links | Overloaded nav, Broken back |
+| 10 | Charts & Data | LOW | Legends, Tooltips, Accessible colors | Color-only meaning |
+
+## UI Styles (67)
+
+### General Styles (49)
+
+| # | Style | Best For | Complexity |
+|---|-------|----------|------------|
+| 1 | Minimalism & Swiss Style | Enterprise, dashboards, docs | Low |
+| 2 | Neumorphism | Health/wellness, meditation | Medium |
+| 3 | Glassmorphism | Modern SaaS, financial dashboards | Medium |
+| 4 | Brutalism | Design portfolios, artistic projects | Low |
+| 5 | 3D & Hyperrealism | Gaming, product showcase, immersive | High |
+| 6 | Vibrant & Block-based | Startups, creative agencies, gaming | Medium |
+| 7 | Dark Mode (OLED) | Night-mode, coding platforms | Low |
+| 8 | Accessible & Ethical | Government, healthcare, education | Low |
+| 9 | Claymorphism | Educational apps, children's apps | Medium |
+| 10 | Aurora UI | Modern SaaS, creative agencies | Medium |
+| 11 | Retro-Futurism | Gaming, entertainment, music | Medium |
+| 12 | Flat Design | Web apps, mobile apps, MVPs | Low |
+| 13 | Skeuomorphism | Legacy apps, gaming, premium | High |
+| 14 | Liquid Glass | Premium SaaS, high-end e-commerce | High |
+| 15 | Motion-Driven | Portfolio sites, storytelling | High |
+| 16 | Micro-interactions | Mobile apps, touchscreen UIs | Medium |
+| 17 | Inclusive Design | Public services, education, healthcare | Low |
+| 18 | Zero Interface | Voice assistants, AI platforms | Low |
+| 19 | Soft UI Evolution | Modern enterprise, SaaS | Medium |
+| 20 | Neubrutalism | Gen Z brands, startups | Low |
+| 21 | Bento Box Grid | Dashboards, product pages | Medium |
+| 22 | Y2K Aesthetic | Fashion, music, Gen Z | Medium |
+| 23 | Cyberpunk UI | Gaming, tech products, crypto | Medium |
+| 24 | Organic Biophilic | Wellness, sustainability brands | Medium |
+| 25 | AI-Native UI | AI products, chatbots, copilots | Medium |
+| 26 | Memphis Design | Creative agencies, music, youth | Medium |
+| 27 | Vaporwave | Music platforms, gaming | Medium |
+| 28 | Dimensional Layering | Dashboards, card layouts | Medium |
+| 29 | Exaggerated Minimalism | Fashion, architecture | Medium |
+| 30 | Kinetic Typography | Hero sections, marketing sites | Medium |
+| 31 | Parallax Storytelling | Brand storytelling, product launches | High |
+| 32 | Swiss Modernism 2.0 | Corporate, architecture, editorial | Low |
+| 33 | HUD / Sci-Fi FUI | Sci-fi games, space tech, cybersecurity | High |
+| 34 | Pixel Art | Indie games, retro tools | Medium |
+| 35 | Bento Grids | Product features, dashboards | Medium |
+| 36 | Spatial UI (VisionOS) | Spatial computing, VR/AR | High |
+| 37 | E-Ink / Paper | Reading apps, digital newspapers | Low |
+| 38 | Gen Z Chaos / Maximalism | Gen Z lifestyle, music artists | Medium |
+| 39 | Biomimetic / Organic 2.0 | Sustainability tech, biotech | Medium |
+| 40 | Anti-Polish / Raw Aesthetic | Creative portfolios, artist sites | Low |
+| 41 | Tactile Digital / Deformable UI | Modern mobile apps, playful brands | High |
+| 42 | Nature Distilled | Wellness brands, sustainable products | Low |
+| 43 | Interactive Cursor Design | Creative portfolios, interactive | High |
+| 44 | Voice-First Multimodal | Voice assistants, accessibility | Medium |
+| 45 | 3D Product Preview | E-commerce, furniture, fashion | High |
+| 46 | Gradient Mesh / Aurora Evolved | Hero sections, backgrounds | Medium |
+| 47 | Editorial Grid / Magazine | News sites, blogs, magazines | Low |
+| 48 | Chromatic Aberration / RGB Split | Music platforms, gaming | Medium |
+| 49 | Vintage Analog / Retro Film | Photography, music/vinyl brands | Medium |
+
+### Landing Page Styles (8)
+
+| # | Style | Best For |
+|---|-------|----------|
+| 1 | Hero-Centric Design | Products with strong visual identity |
+| 2 | Conversion-Optimized | Lead generation, sales pages |
+| 3 | Feature-Rich Showcase | SaaS, complex products |
+| 4 | Minimal & Direct | Simple products, apps |
+| 5 | Social Proof-Focused | Services, B2C products |
+| 6 | Interactive Product Demo | Software, tools |
+| 7 | Trust & Authority | B2B, enterprise, consulting |
+| 8 | Storytelling-Driven | Brands, agencies, nonprofits |
+
+### Dashboard Styles (10)
+
+| # | Style | Best For |
+|---|-------|----------|
+| 1 | Data-Dense Dashboard | Complex data analysis |
+| 2 | Heat Map Style | Geographic/behavior data |
+| 3 | Executive Dashboard | C-suite summaries |
+| 4 | Real-Time Monitoring | Operations, DevOps |
+| 5 | Drill-Down Analytics | Detailed exploration |
+| 6 | Comparative Analysis | Side-by-side comparisons |
+| 7 | Predictive Analytics | Forecasting, ML insights |
+| 8 | User Behavior Analytics | UX research, product analytics |
+| 9 | Financial Dashboard | Finance, accounting |
+| 10 | Sales Intelligence | Sales teams, CRM |
 
 ## CSS Frameworks
 
@@ -86,20 +205,10 @@ I create accessible, beautiful, and consistent user interfaces with immersive ex
 - Performance: GPU-accelerated transforms, `will-change` management
 
 ```javascript
-// GSAP ScrollTrigger example
 gsap.registerPlugin(ScrollTrigger);
-
 gsap.from(".hero-title", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  ease: "power3.out",
-  scrollTrigger: {
-    trigger: ".hero",
-    start: "top center",
-    end: "bottom top",
-    scrub: true,
-  },
+  y: 100, opacity: 0, duration: 1, ease: "power3.out",
+  scrollTrigger: { trigger: ".hero", start: "top center", end: "bottom top", scrub: true },
 });
 ```
 
@@ -107,22 +216,17 @@ gsap.from(".hero-title", {
 - Lightweight motion engine for React
 - Declarative animations with `<motion.div>`
 - Layout animations with `layout` prop
-- Shared layout animations between components
 - Gesture-based animations (hover, tap, drag)
-- Scroll-driven animations with `useScroll` and `useInView`
 - Spring physics with configurable stiffness/damping
 - Exit animations with `AnimatePresence`
 
 ```jsx
-// Motion example
 <motion.div
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ type: "spring", stiffness: 100 }}
   whileHover={{ scale: 1.05 }}
->
-  {content}
-</motion.div>
+/>
 ```
 
 ### Anime.js
@@ -131,18 +235,11 @@ gsap.from(".hero-title", {
 - Stagger animations with `anime.stagger()`
 - Timeline sequencing and callbacks
 - SVG stroke animations and path drawing
-- DOM class/attribute manipulation
-- Cross-browser compatible
 
 ```javascript
-// Anime.js example
 anime({
-  targets: ".square",
-  translateX: 250,
-  rotate: "1turn",
-  duration: 800,
-  easing: "easeInOutQuad",
-  delay: anime.stagger(100),
+  targets: ".square", translateX: 250, rotate: "1turn",
+  duration: 800, easing: "easeInOutQuad", delay: anime.stagger(100),
 });
 ```
 
@@ -155,19 +252,7 @@ anime({
 - Raycasting for mouse interaction
 - GLTF/GLB model loading
 - Post-processing effects (bloom, DOF, SSAO)
-- Responsive canvas with `ResizeObserver`
 - Performance: LOD, frustum culling, instanced meshes
-
-```javascript
-// Three.js scene setup
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, w/h, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-const geometry = new THREE.IcosahedronGeometry(1, 1);
-const material = new THREE.MeshStandardMaterial({ color: 0x00ff88 });
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-```
 
 ### Particles.js
 - Plug-and-play particle systems
@@ -175,132 +260,167 @@ scene.add(mesh);
 - Configuration-driven (JSON config object)
 - Mouse interaction (hover, click effects)
 - Responsive particle density
-- Custom colors, shapes, connections
-- Light performance footprint
 
 ### Atropos
 - Touch-friendly 3D parallax hover effects
 - Maps cursor movements to dynamic parallax
-- Smooth, physics-based response
 - Works on mobile with gyroscope support
 - Customizable intensity and perspective
-- Lightweight, no dependencies
 
-```javascript
-// Atropos example
-Atropos({
-  el: ".my-element",
-  rotateX: true,
-  rotateY: true,
-  rotateZ: true,
-  stretchX: 1,
-  stretchY: 1,
-  commonOrigin: true,
-});
-```
+## Quick Reference
 
-## Landing Page Design
+### 1. Accessibility (CRITICAL)
+- **color-contrast**: Min 4.5:1 normal text, 3:1 large text
+- **focus-states**: Visible focus rings 2–4px on all interactive elements
+- **alt-text**: Descriptive alt for meaningful images
+- **aria-labels**: aria-label for icon-only buttons
+- **keyboard-nav**: Tab order matches visual order; full keyboard support
+- **form-labels**: Use `<label>` with `for` attribute
+- **skip-links**: Skip to main content for keyboard users
+- **heading-hierarchy**: Sequential h1→h6, no level skip
+- **color-not-only**: Don't convey info by color alone
+- **reduced-motion**: Respect `prefers-reduced-motion`
+- **touch-target-size**: Min 44×44pt (Apple) / 48×48dp (Material)
 
-### High-Conversion Layout Patterns
-- **Hero Section**: Bold headline, sub-headline, primary CTA, social proof badge
-- **Feature Grid**: 3-column icons + text, alternating image-text sections
-- **Social Proof**: Logos bar, testimonials carousel, case study cards
-- **Pricing Table**: 3-tier comparison, feature checklist, highlighted recommended
-- **FAQ Accordion**: Common objections addressed, schema markup
-- **Footer CTA**: Final conversion push with urgency elements
-- **Sticky Header**: Navigation that compacts on scroll, CTA always visible
+### 2. Touch & Interaction (CRITICAL)
+- **touch-spacing**: Min 8px gap between touch targets
+- **hover-vs-tap**: Use click/tap for primary; don't rely on hover alone
+- **loading-buttons**: Disable during async; show spinner
+- **cursor-pointer**: Add to clickable elements (Web)
+- **tap-delay**: Use `touch-action: manipulation` to reduce 300ms delay
 
-### Conversion Optimization
-- A/B test headline variations (benefit vs. feature vs. social proof)
--above-the-fold CTA placement with no scroll required
-- Reduce form fields to minimum required
-- Use micro-copy to reduce friction ("No credit card required")
-- Progressive disclosure for complex products
-- Exit-intent popups with value proposition
-- Trust signals near conversion points (badges, reviews, guarantees)
+### 3. Performance (HIGH)
+- **image-optimization**: WebP/AVIF, responsive srcset/sizes, lazy load
+- **image-dimension**: Declare width/height to prevent CLS
+- **font-loading**: `font-display: swap/optional` to avoid FOIT
+- **critical-css**: Inline above-the-fold CSS
+- **lazy-loading**: Dynamic import / route-level splitting
+- **virtualize-lists**: For 50+ items
+- **main-thread-budget**: Keep per-frame work under ~16ms for 60fps
 
-### Performance for Landing Pages
-- Critical CSS inlined for above-the-fold
-- Lazy load below-the-fold sections
-- Preload hero images and fonts
-- Minimize third-party scripts
-- Use `loading="lazy"` for images
-- Implement skeleton screens for perceived performance
-- Target LCP < 2.5s, CLS < 0.1
+### 4. Layout & Responsive (HIGH)
+- **viewport-meta**: `width=device-width initial-scale=1` (never disable zoom)
+- **mobile-first**: Design mobile-first, then scale up
+- **breakpoint-consistency**: 375 / 768 / 1024 / 1440
+- **readable-font-size**: Min 16px body on mobile
+- **line-length**: Mobile 35–60 chars; desktop 60–75 chars
+- **horizontal-scroll**: No horizontal scroll on mobile
+- **spacing-scale**: 4pt/8dp incremental system
+- **z-index-management**: Define layered scale (0/10/20/40/100/1000)
+- **viewport-units**: Prefer `min-h-dvh` over `100vh` on mobile
 
-## Interactive Effects to Implement
+### 5. Typography & Color (MEDIUM)
+- **line-height**: 1.5–1.75 for body text
+- **font-pairing**: Match heading/body font personalities (see `data/typography.csv`)
+- **font-scale**: Consistent type scale (12 14 16 18 24 32)
+- **color-semantic**: Define tokens (primary, secondary, error, surface) not raw hex
+- **color-dark-mode**: Desaturated/lighter variants, not inverted colors
+- **number-tabular**: Use tabular figures for data columns
 
-### Kinetic Typography
-- Split text headers into moving layers
-- Advanced clipping masks with cursor tracking
-- Parallax text movement on scroll
-- Text reveal animations (clip-path, mask-image)
-- Letter-by-letter stagger with color shifts
+### 6. Animation (MEDIUM)
+- **duration-timing**: 150–300ms micro-interactions; ≤400ms complex transitions
+- **transform-performance**: Use `transform`/`opacity` only; avoid width/height
+- **easing**: ease-out entering, ease-in exiting
+- **motion-meaning**: Every animation must express cause-effect
+- **exit-faster-than-enter**: Exit ~60–70% of enter duration
+- **stagger-sequence**: 30–50ms per item for lists/grids
+- **spring-physics**: Prefer spring curves for natural feel
+- **interruptible**: User tap/gesture cancels in-progress animation
 
-### Particle Image Reconstruction
-- Deconstruct raster images into autonomous particles
-- Morph particle positions on hover
-- Reassemble on mouse leave
-- Use Canvas 2D or Three.js point sprites
-- Control particle size, speed, connection distance
+### 7. Forms & Feedback (MEDIUM)
+- **input-labels**: Visible label per input (not placeholder-only)
+- **error-placement**: Below the related field
+- **inline-validation**: On blur, not keystroke
+- **input-type-keyboard**: Semantic types (email, tel, number)
+- **progressive-disclosure**: Reveal complex options progressively
+- **error-recovery**: Messages must include clear recovery path
+- **multi-step-progress**: Step indicator + back navigation
+- **form-autosave**: Auto-save drafts for long forms
 
-### Scroll-Triggered Storytelling
-- Synchronize scroll position with 3D transformations
-- Object scaling and viewport reveals
-- Cinematic transitions between sections
-- Parallax layer depth (foreground, mid, background)
-- Pin sections during animation sequences
+### 8. Navigation (HIGH)
+- **bottom-nav-limit**: Max 5 items with labels
+- **back-behavior**: Predictable and consistent; preserve scroll/state
+- **deep-linking**: All key screens reachable via URL
+- **nav-label-icon**: Both icon and text label; icon-only harms discoverability
+- **nav-state-active**: Current location visually highlighted
+- **adaptive-navigation**: Large screens (≥1024px) sidebar; small screens bottom/top nav
 
-## Curated Repositories & Inspiration
+### 9. Charts & Data (LOW)
+- **chart-type**: Match chart to data (trend→line, comparison→bar, proportion→pie)
+- **color-guidance**: Accessible palettes; avoid red/green only
+- **data-table**: Provide table alternative for accessibility
+- **legend-visible**: Always show legend near chart
+- **tooltip-on-interact**: Show exact values on hover/tap
+- **empty-data-state**: Meaningful empty state with guidance
 
-### FreeFrontend JavaScript Galleries
-- Live code blocks for JS animations
-- Immersive background effects collection
-- Interactive component demos
+## Landing Page Patterns
 
-### Syaning's Awesome Frontend
-- Modern SVG charting extensions
-- Styling tools and script combinations
-- Curated frontend resource aggregation
+| Pattern | Sections | Best For |
+|---------|----------|----------|
+| Hero-Centric | Hero → Features → CTA | Strong visual products |
+| Conversion-Optimized | Form → Trust → Urgency | Lead gen, sales |
+| Feature-Rich | Hero → Grid → Comparison → CTA | SaaS, complex products |
+| Minimal & Direct | Hero → Brief → Single CTA | Simple products |
+| Social Proof | Hero → Logos → Testimonials → CTA | Services, B2C |
+| Interactive Demo | Hero → Demo → Features → CTA | Software, tools |
+| Trust & Authority | Hero → Badges → Case Studies → CTA | B2B, enterprise |
+| Storytelling | Chapter 1 → 2 → 3 → CTA | Brands, nonprofits |
 
-### Olivier3lanc Frontend-Links
-- Scrolling trackers and micro-interactions
-- Gradient shader examples
-- Open-source indexing tools for frontend inspiration
+## Chart Type Recommendations
 
-## Best Practices
+| Data Type | Recommended Chart | Avoid |
+|-----------|-------------------|-------|
+| Trend over time | Line chart | Pie chart |
+| Comparison | Bar chart | Line chart |
+| Proportion | Donut chart | Bar chart (>5 categories) |
+| Correlation | Scatter plot | Pie chart |
+| Distribution | Histogram | Line chart |
+| Geographic | Choropleth map | Bar chart |
+| Flow/Funnel | Funnel chart | Pie chart |
+| Hierarchical | Treemap | Bar chart |
+| Real-time | Streaming line | Static chart |
+| Multi-dimensional | Radar/Spider | Pie chart |
 
-### Accessibility (WCAG 2.1 AA)
-- Maintain 4.5:1 contrast ratio for normal text, 3:1 for large text
-- Use semantic HTML elements (`button`, `nav`, `main`, `article`)
-- Implement visible focus indicators on all interactive elements
-- Add `alt` text to all meaningful images
-- Ensure keyboard navigation for all interactive elements
-- Use ARIA landmarks and labels when semantic HTML isn't sufficient
-- Test with screen readers (VoiceOver, NVDA, JAWS)
-- Provide skip navigation links
-- **Motion**: Respect `prefers-reduced-motion` media query
-- **3D/Particles**: Provide fallback static backgrounds for reduced motion
+## Pre-Delivery Checklist
 
-### Design Systems
-- Define spacing scale (4px base: 4, 8, 12, 16, 24, 32, 48, 64, 96)
-- Create consistent border radius scale
-- Define type scale with modular ratio (1.250 or 1.333)
-- Use design tokens for all visual properties
-- Document component usage, variants, and accessibility requirements
-- Implement compound components for complex UI patterns
+### Visual Quality
+- [ ] No emojis as icons (use SVG: Heroicons, Lucide)
+- [ ] All icons from consistent icon family
+- [ ] Pressed states don't shift layout bounds
+- [ ] Semantic theme tokens used (no ad-hoc hex)
+- [ ] Dark mode contrast verified independently
 
-### CSS Architecture
-- Use CSS custom properties for theming
-- Implement mobile-first media queries
-- Use CSS Grid for page layouts, Flexbox for component layouts
-- Prefer `rem`/`em` over `px` for typography
-- Use `clamp()` for fluid typography
-- Implement `prefers-reduced-motion` for motion sensitivity
-- Use `contain` property for layout containment
-- Leverage `@layer` for cascade management
+### Interaction
+- [ ] All tappable elements have pressed feedback
+- [ ] Touch targets ≥44pt (iOS) / ≥48dp (Android)
+- [ ] Micro-interactions 150–300ms with native easing
+- [ ] Disabled states visually clear and non-interactive
+- [ ] Screen reader focus order matches visual order
 
-### Animation Performance
+### Accessibility
+- [ ] Primary text contrast ≥4.5:1 in both light/dark
+- [ ] Secondary text contrast ≥3:1
+- [ ] Color is not the only indicator
+- [ ] Reduced motion respected
+- [ ] Dynamic text size supported without breakage
+- [ ] All images have alt text
+
+### Layout
+- [ ] Safe areas respected for headers, tab bars, CTAs
+- [ ] Scroll content not hidden behind fixed bars
+- [ ] Verified on 375px, 768px, 1024px, 1440px
+- [ ] 4/8dp spacing rhythm maintained
+- [ ] No horizontal scroll on mobile
+
+### Performance
+- [ ] Images optimized (WebP/AVIF)
+- [ ] Lazy loading for below-the-fold
+- [ ] CLS < 0.1
+- [ ] LCP < 2.5s
+- [ ] No layout thrashing
+
+## Animation Performance
+
 - Use `transform` and `opacity` for GPU-accelerated animations
 - Avoid animating `width`, `height`, `top`, `left` (triggers layout)
 - Use `will-change` sparingly and remove after animation
@@ -310,36 +430,40 @@ Atropos({
 - Use CSS `@media (prefers-reduced-motion: reduce)` to disable non-essential animations
 - Profile with Chrome DevTools Performance panel
 
-### Color & Theming
+## Color & Theming
+
 - Design with a limited color palette (5-7 colors)
 - Use HSL for color manipulation
 - Implement dark mode with `prefers-color-scheme`
 - Ensure all states have sufficient contrast (hover, focus, active, disabled)
 - Use color as enhancement, not the only indicator
+- **See `data/colors.csv` for 161 industry-specific palettes**
 
-### Typography
+## Typography
+
 - Limit to 2-3 font families maximum
 - Use system font stacks for performance
 - Set line-height to 1.4-1.6 for body text
 - Limit line length to 60-80 characters
 - Use responsive font sizes with `clamp()`
 - Implement `font-display: swap` for web fonts
+- **See `data/typography.csv` for 57 curated font pairings**
 
 ## Project Structure
 
 ```
 design-system/
 ├── tokens/
-│   ├── colors.ts                # Color tokens
-│   ├── typography.ts            # Type scale
-│   ├── spacing.ts               # Spacing scale
-│   ├── shadows.ts               # Elevation system
-│   ├── animations.ts            # Animation tokens (durations, easings)
-│   └── index.ts                 # Export all tokens
+│   ├── colors.ts
+│   ├── typography.ts
+│   ├── spacing.ts
+│   ├── shadows.ts
+│   ├── animations.ts
+│   └── index.ts
 ├── components/
 │   ├── Button/
 │   │   ├── Button.tsx
-│   │   ├── Button.stories.tsx   # Storybook stories
+│   │   ├── Button.stories.tsx
 │   │   ├── Button.test.tsx
 │   │   └── Button.module.css
 │   ├── Input/
@@ -347,44 +471,47 @@ design-system/
 │   ├── Modal/
 │   └── index.ts
 ├── animations/
-│   ├── gsap-config.ts           # GSAP registration and defaults
-│   ├── scroll-animations.ts     # ScrollTrigger presets
-│   ├── transitions.ts           # CSS transition classes
-│   └── keyframes.ts             # CSS keyframe definitions
+│   ├── gsap-config.ts
+│   ├── scroll-animations.ts
+│   ├── transitions.ts
+│   └── keyframes.ts
 ├── three/
-│   ├── scene-setup.ts           # Three.js boilerplate
-│   ├── particles.ts             # Particle system configs
-│   └── post-processing.ts       # Bloom, DOF effects
+│   ├── scene-setup.ts
+│   ├── particles.ts
+│   └── post-processing.ts
 ├── landing/
-│   ├── Hero.tsx                 # Hero section component
-│   ├── Features.tsx             # Feature grid
-│   ├── Pricing.tsx              # Pricing table
-│   ├── Testimonials.tsx         # Social proof
-│   └── FAQ.tsx                  # FAQ accordion
+│   ├── Hero.tsx
+│   ├── Features.tsx
+│   ├── Pricing.tsx
+│   ├── Testimonials.tsx
+│   └── FAQ.tsx
 ├── styles/
-│   ├── globals.css              # Global styles, CSS variables
-│   ├── reset.css                # CSS reset/normalize
+│   ├── globals.css
+│   ├── reset.css
 │   ├── themes/
 │   │   ├── light.css
 │   │   └── dark.css
-│   └── utilities.css            # Utility classes
+│   └── utilities.css
 ├── hooks/
 │   ├── use-media-query.ts
 │   ├── use-theme.ts
-│   ├── use-escape.ts
-│   ├── use-scroll-position.ts
-│   ├── use-in-view.ts
-│   └── use-reduced-motion.ts
-├── docs/
-│   ├── accessibility.md
-│   ├── color.md
-│   ├── typography.md
-│   ├── spacing.md
-│   ├── animation-guidelines.md
-│   └── landing-page-patterns.md
-├── storybook/
-│   └── preview.ts
-├── tailwind.config.ts           # Tailwind with design tokens
-├── bootstrap.config.scss        # Bootstrap customization
+│   ├── use-reduced-motion.ts
+│   └── use-in-view.ts
+├── tailwind.config.ts
 └── package.json
 ```
+
+## Curated Resources
+
+### FreeFrontend
+- Live code blocks for JS animations
+- Immersive background effects collection
+- Interactive component demos
+
+### Syaning's Awesome Frontend
+- Modern SVG charting extensions
+- Styling tools and script combinations
+
+### Olivier3lanc Frontend-Links
+- Scrolling trackers and micro-interactions
+- Gradient shader examples

@@ -1,0 +1,26 @@
+No,Chart Type,Data Type,Best For,Avoid When,Library Recommendation,Accessibility Notes,Interaction Pattern
+1,Line Chart,Trend over time,Time series continuous data,Categorical comparison,Recharts Chart.js D3.js,Provide data table alt text,Hover tooltip with values
+2,Bar Chart,Categorical comparison,Comparing discrete categories,Continuous time data,Recharts Chart.js D3.js,Pattern fills for colorblind,Click to highlight category
+3,Horizontal Bar,Ranked comparison,Long category names rankings,Time series,Recharts Chart.js,Labels on bars for readability,Hover to highlight
+4,Stacked Bar,Part-to-whole over time,Composition changes over time,Individual value comparison,Recharts Chart.js D3.js,Legend with clear labels,Hover for segment details
+5,Grouped Bar,Multiple series comparison,Comparing 2-3 series per category,More than 4 series,Recharts Chart.js,Distinct patterns per group,Hover to compare
+6,Donut Chart,Proportion,Portfolio allocation budget split,More than 5 categories,Recharts Chart.js,Percentage labels on segments,Click to drill down
+7,Pie Chart,Simple proportion,Budget allocation simple split,More than 5 categories,Recharts Chart.js,Labels with percentages,Hover to highlight segment
+8,Area Chart,Volume over time,Cumulative trends volume data,Discrete comparisons,Recharts Chart.js D3.js,Semi-transparent fills,Hover for crosshair values
+9,Stacked Area,Composition over time,Part-to-whole trends,Individual series comparison,Recharts Chart.js D3.js,Clear legend and labels,Hover for layer details
+10,Scatter Plot,Correlation,Relationship between two variables,Linear sequential data,Recharts Chart.js D3.js,Describe correlation in alt text,Hover for point details
+11,Bubble Chart,Three dimensions,Adding size dimension to scatter,Simple two-variable data,Recharts Chart.js D3.js,Legend for bubble sizes,Hover for all dimensions
+12,Radar Chart,Multi-dimensional,Comparing 3+ metrics per entity,More than 8 axes,Recharts Chart.js,Limited axes for readability,Hover for axis values
+13,Heat Map,Intensity matrix,Correlation matrices user behavior,Simple comparisons,D3.js Chart.js,Accessible color gradient,Hover for cell value
+14,Funnel Chart,Conversion flow,Sales funnel user journey,Non-sequential data,Recharts Chart.js,Percentage labels per stage,Click to drill into stage
+15,Treemap,Hierarchical proportion,File sizes budget allocation,Flat data,D3.js,Accessible color coding,Hover for details click to zoom
+16,Gantt Chart,Project timeline,Project schedules dependencies,Simple timelines,Custom D3.js,Accessible task descriptions,Drag to reschedule
+17,Candlestick,Financial data,Stock price OHLC data,Non-financial data,D3.js Custom,Clear color coding up/down,Hover for OHLC values
+18,Box Plot,Distribution,Statistical distribution outliers,Simple averages,D3.js,Explain quartiles in alt text,Hover for statistics
+19,Violin Plot,Distribution shape,Full distribution shape,Simple distributions,D3.js,Describe shape in alt text,Hover for density
+20,Waterfall Chart,Cumulative effect,Budget changes revenue breakdown,Simple totals,Recharts Chart.js,Clear positive/negative colors,Hover for value details
+21,Gauge Chart,Single metric,KPI progress toward goal,Multiple metrics,Chart.js Custom,Value in alt text,Click for details
+22,Sparkline,Trend inline,Trend within table or card,Detailed analysis,Chart.js Custom,Describe trend direction,No interaction needed
+23,Sankey Diagram,Flow,Energy flow user journey budget,Simple comparisons,D3.js,Describe main flows,Hover for flow details
+24,Network Graph,Relationships,Connections between entities,Sequential data,D3.js,Describe key connections,Hover to highlight connections
+25,Choropleth Map,Geographic data,Regional comparisons,Non-geographic data,D3.js Leaflet,Describe regional patterns,Hover for region details
